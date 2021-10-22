@@ -7,6 +7,7 @@
     <title>@yield('title')</title>
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body style="font-family:sans-serif;">
     <nav class="navbar navbar-expand-md navbar-dark bg-primary shadow-sm">
@@ -39,7 +40,10 @@
                                 {{ Auth::user() -> name }} <span class="caret"></span>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a href="/" target="_blank" class="dropdown-item">
+                                <a href="/admin" class="dropdown-item">
+                                    Admin
+                                </a>
+                                <a href="/" class="dropdown-item">
                                     Blog
                                 </a>
                                 <a href="{{ route('logout') }}" class="dropdown-item" onclick="event.preventDefault();

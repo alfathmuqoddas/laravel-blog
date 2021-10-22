@@ -1,4 +1,4 @@
-@extends('master')
+@extends('layouts.app')
 
 @section('header')
 <h2 class="text-center">Article List</h2>
