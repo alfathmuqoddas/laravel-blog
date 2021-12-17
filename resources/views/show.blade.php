@@ -15,7 +15,7 @@
         <div class="card">
             <img src="https://picsum.photos/seed/{{ $article->id }}/540/270" class="card-img-top" alt="gambar" >
             <div class="card-body">
-                <h5 class="card-title">{{ $article->title }}</h5>
+                <a href="/detail/{{ $article->id }}" class="card-title"><h5>{{ $article->title }}</h5></a>
                 <p>by {{ $article -> user -> name }}</p>
                 <a href="/detail/{{ $article->id }}" class="btn btn-primary">Read</a>
             </div>

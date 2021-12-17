@@ -1,4 +1,6 @@
-@extends('layouts.app')
+@extends('layouts.app')Name
+￼
+
 
 @section('title', 'Edit Article')
 

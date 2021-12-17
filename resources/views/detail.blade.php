@@ -8,11 +8,11 @@
 <div class="col-md-8 col-sm-12">
 	<div class="mb-5 bg-white p-0">
 		<img src="https://picsum.photos/seed/{{ $article -> id }}/540/270" alt="header-photos" class="w-100">
-		<div class="my-5">
+		<div class="my-3">
 			<h2 class="text-center m-0">{{ $article -> title }}</h2>
 			<p class="text-center">by {{ $article -> user -> name }}</p>
 		</div>
-		<p class="mx-3">{{ $article -> description }}</p>
+		<p class="p-3">{{ $article -> description }}</p>
 	</div>
 </div>
 @endsection
